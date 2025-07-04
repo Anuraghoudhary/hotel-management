@@ -1,0 +1,183 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+<h1>Log in</h1>
+    <form action="/home" method="post">
+        <input type="text" placeholder="Enter username" name="username">
+        <input type="text" placeholder="Enter Password" name="password">
+        <button>Log in</button>
+    </form>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Login Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* background: linear-gradient(135deg, #6a11cb, #2575fc); */
+            background: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.608)), url("https://www.itchotels.com/content/dam/itchotels/in/umbrella/itc/hotels/itcgrandchola-chennai/images/overview/headmast-desktop/pool-long-dusk.png");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        /* Login Container */
+        .login-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Input Fields */
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-group input:focus {
+            border-color: #6a11cb;
+            outline: none;
+        }
+
+        /* Submit Button */
+        .login-button {
+            width: 100%;
+            padding: 12px;
+            /* background: linear-gradient(135deg, #6a11cb, #2575fc); */
+            background: linear-gradient(135deg, black, rgb(61, 61, 61));
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .login-button:hover {
+            /* background: linear-gradient(135deg, #2575fc, #6a11cb); */
+            background: linear-gradient(135deg, rgb(59, 59, 59), black);
+        }
+
+        /* Additional Links */
+        .additional-links {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .additional-links a {
+            color: #6a11cb;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .additional-links a:hover {
+            color: #2575fc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .login-container {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+
+        .backbutton {
+            position: relative !important;
+            top: 325px !important;
+            left: 915px;
+
+        }
+
+        .backbutton button {
+            background-color: rgba(255, 255, 255, 0.249);
+            color: rgba(0, 0, 0, 0.643);
+            border-radius: 8px;
+            border: none;
+            box-shadow: #333;
+        }
+
+        .backbutton:hover {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/listing" class="backbutton"> <button>back</button></button></form>
+    <div class="login-container">
+        <h2>Welcome to Hota!</h2>
+        <form action="/listing">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+        <div class="additional-links">
+            <a href="#">Forgot Password?</a> | <a href="#">Sign Up</a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

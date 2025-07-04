@@ -1,0 +1,21 @@
+<%layout("/layouts/boilerplate")%>
+
+<body style="margin-left: 20px;"><br>
+    <h2>Deshboard</h2><br>
+    
+    <ol>
+   <%for(let list of listing1){%>
+    <li><h5><%=list.Title%></h5>
+    <p><%=list.Description%></p>
+    <p>&#8377;<%=list.Price%> / night </p></li>
+    <div class="row">
+        <div class="col-5" style="display: flex;">
+     <form action="/listing/<%=list._id%>/edit"><button class="btn btn-dark" style="font-size: 12px;">Edit</button></form>
+    
+     <form action="/listing/<%=list._id%>?_method=delete" method="post"><button class="btn btn-dark offset-1" style="font-size: 12px;">delete</button></form></div>
+    </div>
+     <br>
+    <br>
+    <%}%>
+</ol>
+</body>

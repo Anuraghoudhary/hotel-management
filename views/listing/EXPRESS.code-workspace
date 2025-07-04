@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../../EXPRESS"
+		},
+		{
+			"path": "../../../../../../GIT & GITHUB"
+		},
+		{
+			"path": "../../../../../../HTML"
+		},
+		{
+			"path": "../../../../../../JAVASCRIPT"
+		},
+		{
+			"path": "../../../../.."
+		},
+		{
+			"path": "../../../../../../NODE"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "EXPRESS"
+	}
+}

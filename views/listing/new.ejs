@@ -1,0 +1,24 @@
+<%layout('/layouts/boilerplate.ejs')%>
+    <body><br>
+        <div class="row">
+            <div class="col-6  offset-3">
+                <h4>New added</h4>
+                <%for(let list of listing1){%>
+                    <div class="card mb-3">
+                        <img src="<%=list.Image%>" class="card-img-top" alt="..." style="height:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <%=list.Title%>
+                            </h5>
+                            <p class="card-text">
+                                <%=list.Description%>
+                            </p>
+                            <p class="card-text"><small class="text-body-secondary">
+                                    <%=list.Price%>
+                                </small></p>
+                        </div>
+                    </div>
+                <%}%>
+            </div>
+        </div>
+    </body>

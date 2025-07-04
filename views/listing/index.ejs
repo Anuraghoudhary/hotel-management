@@ -1,0 +1,38 @@
+<% layout("/layouts/boilerplate") %>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All </title>
+    <link rel="stylesheet" href="./stylesheet/style.css">
+</head> -->
+<body>
+    <div class="allDetaile"><br>
+    <h2>ALL HOTELS</h2>
+    <P class="createtext">Upload Your place for earn !!</P>
+    <!-- <form action="listing/create">
+        <button class="createbtn">Create</button>
+    </form> -->
+    
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 ">
+        <%for(let list of listing1){%>
+            <div class="card col" style="width: 31rem;">
+                <a href="/listing/<%=list.id%>">
+               <img src="<%=list.Image%>" class="card-img-top" alt="Image Loading" style="height: 20rem;">
+              <!-- Overlay : for writing on image -->
+               <div class="card-img-overlay"></div>
+                   <div class="card-body">
+                       <h5 class="card-title"><%=list.Title%></h5>
+                       <p class="card-description"><%=list.Description%></p>
+                       <p class="card-price">&#8377;<%=list.Price%> / night     </p></a>
+                       <a href="/listing/<%=list.id%>" class="btn btn-primary ">All Details</a>
+                    </div>
+            </div>
+            <%}%>
+        </div>
+</div>
+</div>
+
+</body>
+<!-- </html> -->

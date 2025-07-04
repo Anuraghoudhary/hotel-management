@@ -1,0 +1,202 @@
+
+/* for stick footer */
+body{
+    background-color: aliceblue !important;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    font-optical-sizing: auto !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.bodyImp{
+    flex: 1;
+}
+
+.webName{
+    position: relative;
+
+}
+img{
+    width: 300px;
+}
+
+
+.createbtn{
+    width: 170px;
+    color: rgba(0, 0, 0, 0.69);
+    border-radius: 3px;
+}
+.createtext{
+    font-size: 14px;
+}
+.bookbtn{
+    width: 120px !important;
+    color: rgba(0, 0, 0, 0.69)!important;
+    border-radius: 3px!important;
+    position: relative!important;
+    left:350px!important;
+    bottom:42px!important;
+}
+.titletext{
+    color:black;
+}
+a{
+    text-decoration: none !important;
+}
+
+.delete{
+    width: 50px;
+    font-size: 12px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 35px;
+    left: 10px;
+}
+
+.allDetaile{
+    margin-left: 30px !important;
+}
+
+footer{
+    background-color: rgba(114, 114, 114, 0.219);
+    padding: 16px;
+}
+.footer{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items:space-evenly;
+
+}
+.footerSocial i{
+    margin-right: 6px;
+}
+.footerSocial{
+    font-size: 110%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footerText{
+color: rgba(0, 0, 0, 0.747);
+    width: 100%;
+    font-size: 90%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerLinks a{
+color: rgba(0, 0, 0, 0.769);
+    width: 100%;
+    font-size: 85%;
+    position: relative;
+    bottom: 14px;
+    display:flex;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+
+}
+.card{
+    display: flex;
+    display: inline;
+}
+.line{
+    display: flax;
+    justify-content: center;
+    align-items: center;    
+    border: none;   
+}
+
+.card{
+    border: none !important;
+    margin-bottom:2rem ;
+}
+.card-img-top{
+border-radius: 10px !important;
+width: 100%;
+object-fit: cover !important;
+}
+a{
+    color:#212529 !important;
+}
+.btn{
+    color: white !important;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+ opacity: 0.06;
+ background-color: rgb(0, 0, 0);
+ width: 35rem;
+}
+
+.navbar-brand i{
+font-size: 85%;
+margin-left: 5px;
+margin-right: 4px;
+color: rgba(0, 0, 0, 0.850);
+}
+
+.PRI{
+    display: flex !important;
+    justify-content: center !important;
+    position: relative;
+    flex-wrap: wrap;
+    align-items:center;
+    left: 70px;
+    width: 400px;
+}
+
+.show-img{
+    width: 630px !important;
+    height: 53vh;
+}
+.show-btn{
+    display: flex !important;
+}
+.navbar{
+    background-color: rgb(255, 255, 255);
+    height: 65px !important;
+}
+
+.errormessage{
+    position: relative;
+    top: 22.5vh;
+    left: 10px;
+    right: 100px;
+    /* background-color:; */
+}
+.errormessage i{
+    font-size: 33.5px;
+}
+.errormessage a{
+    font-size: 12.5px;
+    font-weight: 450 !important;
+    position: relative;
+    bottom: 12px;
+    margin-left: 70px;
+}
+
+.errormessage a{
+    font-size: 12.5px;
+    font-weight: 450 !important;
+    position: relative;
+    bottom: 12px;
+    margin-left: 70px;
+}
+
+.erroralert{
+    position: relative;
+    top: 25.5vh;
+}
+
+.backbutton{
+    position: relative  !important;
+    left: 100px !important;
+}

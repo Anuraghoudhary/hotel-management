@@ -1,0 +1,51 @@
+/* img{
+    width: 500px;
+}
+body{
+    background-color: aliceblue;
+    margin-left: 20px;
+}
+.createbtn{
+width: 170px;
+color: rgba(0, 0, 0, 0.69);
+border-radius: 3px;
+}
+.createtext{
+    font-size: 14px;
+}
+.bookbtn{
+    width: 120px;
+   color: rgba(0, 0, 0, 0.69);
+    border-radius: 3px;
+    position: relative;
+    left:350px;
+    bottom:42px
+}
+.titletext{
+    color:black;
+}
+a{
+text-decoration: none;
+} */
+
+a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    left: 48.45%;
+    top: 205px;
+}
+
+.hotaihome i{
+font-size: 86%;
+position: relative;
+top: 9px;
+}
+.hotaihome{
+    font-size: 50px;
+    position: relative;
+    display: flex;
+    left: 40%;
+    top: 245px;
+}

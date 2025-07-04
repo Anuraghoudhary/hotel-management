@@ -1,0 +1,35 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <div class="row">
+    <div class="col-6 offset-lg-3 offset-md-2 offset-sm-1"><br>
+        <h4 style="font-weight: 600;">Listing Details</h4>
+    </div>
+    <div class="col-5 offset-lg-3 offset-md-2 offset-sm-1">
+        <img src="<%=list.Image%>" class="card-img-top show-img" alt="Image Not found !!">
+        <div class="card-body">
+            <p style="margin-top: 7px;"><B><%=list.Title%></B></p>
+            <p class="card-text"><%=list.Description%></p>
+            <p class="card-price" style="font-weight: 500;">&#8377;<%=list.Price%> / night </p>   
+
+        </p>
+        <p>
+            <%=list.Location%>
+        </p><p>
+            <%=list.Country%>
+        </p>
+        </div>
+        <div class="show-btn">
+            <form action="/listing/<%=list._id%>/edit">
+                <button class="btn btn-dark" >Edit</button>
+            </form>
+        <form action="/listing/<%=list._id%>?_method=delete" method="post">
+            <button class="btn btn-dark offset-4">Delete</button>
+        </form>
+        <form action="/fav/<%=list.id%>">
+            <button class="btn btn-dark offset-8">Favorite</button>
+        </form> 
+        </div>
+    <br>
+    </div></div>
+</body>
+ 

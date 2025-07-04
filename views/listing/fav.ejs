@@ -1,0 +1,29 @@
+<% layout("/layouts/boilerplate") %>
+
+    <body>
+        <div class="allDetaile"><br>
+            <h2>ALL FAVORITE</h2>
+            <P class="createtext">See Your fav place !!</P>
+
+            <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 ">
+            
+                <%for(let fav of fav1){%>
+                    <div class="card col" style="width: 31rem;">
+                        <img src="<%=fav.Image%>" class="card-img-top" alt="Image Loading" style="height: 20rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <%=fav.Title%>
+                            </h5>
+                            <p class="card-description">
+                                <%=fav.Description%>
+                            </p>
+                            <p class="card-price">&#8377;<%=fav.Price%> / night </p>
+                            <form action="/fav/<%=fav.id%>?_method=DELETE" method="post">
+                                <button class="btn btn-dark">Remove</button></form>
+                        </div>
+                    </div>
+                    <%}%>
+            </div>
+        </div>
+
+    </body>

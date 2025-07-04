@@ -1,0 +1,44 @@
+<%layout('/layouts/boilerplate.ejs')%>
+<body><br>
+    <div class="row">
+        <div class="col-8 offset-2">
+    <h3>Add New Listing</h3>
+    <form action="/listing" method="post" novalidate class="needs-validation">
+        <div class="mb-3">
+        <label for="Title" class="form-label">Title</label>
+        <input type="text" placeholder="enter title" name=listing[Title] class="form-control" required>
+        <div class="valid-feedback">Good title</div>
+        <div class="invalid-feedback">Please enter title</div>
+        </div>
+        <div class="mb-3">
+        <label for="enter Description" class="form-label">Description</label>
+        <textarea class="form-control" rows="4" cols="20" name=listing[Description] required>Enter Description !! </textarea>
+        <div class="invalid-feedback">Please enter description</div>
+        </div>
+        <div class="mb-3">
+        <label for="Image" class="form-label">Image Link</label>
+        <input type="text" placeholder="enter image url" name=listing[Image] class="form-control">
+        </div>
+        <div class="row">
+        <div class="mb-3 col-md-4">
+        <label for="Price" class="form-label">Price</label>
+        <input type="number" placeholder="enter price" name=listing[Price] class="form-control"required>
+        <div class="invalid-feedback">Please enter price</div>
+        </div>
+        <div class="mb-3 col-md-8">
+        <label for="Country" class="form-label">Country</label>
+        <input type="text" placeholder="enter country" name=listing[Country] class="form-control"required>
+        <div class="invalid-feedback">Please enter country</div>
+        </div>
+        </div>
+        <div class="mb-3">
+        <label for="Location" class="form-label">Location</label>
+        <input type="text" placeholder="enter location" name=listing[Location] class="form-control"required>
+        <div class="invalid-feedback">Please enter location</div>
+        </div><br>
+        <button class="btn btn-dark">Add</button><br><br>
+    </form>
+</div>
+</div>
+</body>
+
